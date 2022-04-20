@@ -1,0 +1,34 @@
+var d = new Date();
+document.write(d);
+
+var d1 = new Date(year,month,date,hours,min,sec,ms);
+
+if one parameter is passed it consider it as milisecond
+
+var d2 = new Date("2022 April 05");
+
+# Methods:
+1. d.toString();
+2. d.toUTCStirng();
+3. var misec = Date.parse(d);
+   var d = new Date(misec);
+
+
+
+Q. write a js program and represent today's date in the format of 05/April/2022 11:30:30 Am
+
+    d.getDate();
+    d.getMonth();
+    d.getFullYear();
+    d.getHours();
+    d.getMinutes();
+    d.getSeconds();
+    d.getDay(); -> 0-6
+    d.getTime(); -> return milisecond
+
+
+Q. write prog to check 1st jan is having sunday in which year from 2015 to 2022;
+
+Q. write a prog to check if year is leap year or not;
+
+Q. how many days left for RamNavami;

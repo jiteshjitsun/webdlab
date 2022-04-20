@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Email encryption</h2>
+    
+    <input type="email" value="" placeholder="enter your name" id="email">
+    <button onclick="callfunction()">convert</button>
+    <h1 id="print"></h1>
+    <script>
+        function callfunction(){
+            // window.promt("ENter your mail");
+            var s = document.getElementById("email").value;
+            var indx = s.search("@");
+            var s1 = s.substring(0,indx+1);
+            var s2 = s1.slice(-6,-1);
+            var s = s.replace(s2,"*****");
+            console.log(s);
+            // console.write()
+            document.getElementById("print").innerHTML = s;            
+        }
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,5 @@
+mnRegular Expression 
+
+str.search("Hello");
+str.indexOf("h");
+str.replace("Hello","hi");

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <p style="font-size: 10pt; color: red;" id="para" onclick="run()">TEXT-GROWING</p>
+
+    
+<body>
+    <script>
+        function run() {
+            console.log("smk");
+            let p = document.getElementById("para");
+            let time = setInterval(change,1000);
+            let ini = "20pt";
+            let n = 10;
+            
+            function change(){
+                console.log(ini);
+                p.style.fontSize =  ini;
+                if(ini = "50pt"){
+                    p.style.color = "blue";
+                    return;
+                }
+                n += 5;
+                ini = n+"pt";
+            }
+            return;
+        }
+    </script>
+</body>
+</html>
+
+

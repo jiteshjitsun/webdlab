@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Form</title>
+
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        border: 3px solid rgb(35, 35, 35);
+        padding: 2px;
+      }
+      p {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+      }
+      span.label {
+        width: 20px;
+      }
+      .element {
+        width: 80%;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <span class="label"> First Name </span>
+          <span class="element">
+            <input type="text" />
+          </span>
+        </p>
+        <p>
+          <span class="label"> Gender </span>
+          <span class="element">
+            <input type="text" />
+          </span>
+        </p>
+        <p>
+          <span class="label"> Last Name </span>
+          <span class="element">
+            <input type="text" />
+          </span>
+        </p>
+        <p>
+          <span class="label"> Nationality </span>
+          <span class="element">
+            <select>
+              <option value="v">Canadian</option>
+              <option value="v">Indian</option>
+            </select>
+          </span>
+        </p>
+        <p>
+          <span class="label"> Address </span>
+          <span class="element">
+            <textarea name="address" rows="4" cols="50"></textarea>
+          </span>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Medical History</legend>
+        <span><input type="checkbox" name="mh" id="mh" /> Smallpox </span>
+        <span><input type="checkbox" name="mh" id="mh" /> Mumps </span>
+        <span><input type="checkbox" name="mh" id="mh" /> Dizziness </span>
+        <span><input type="checkbox" name="mh" id="mh" /> Sneezing </span>
+      </fieldset>
+      <fieldset>
+        <legend>Current Medication</legend>
+        <div>
+          Are you currently taking any medication?
+          <span><input type="radio" name=" mh" id="mh" /> Yes </span>
+          <span><input type="radio" name=" mh" id="mh" /> No </span>
+        </div>
+        <div>
+          If you are currently taking medication, please indicate it in the
+          space below:<br />
+          <span>
+            <textarea name="Info" id="" rows="5" cols="80"></textarea>
+          </span>
+        </div>
+      </fieldset>
+      <div>
+        <span> <input type="submit" /> </span>
+        <span> <input type="reset" /> </span>
+      </div>
+    </form>
+  </body>
+</html>

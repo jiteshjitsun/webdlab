@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize The Word!</title>
+</head>
+<body>
+    <input type="text" value="" name="" id="input">
+    <input type="button" onclick="func()" value="Capitalize" name="" id="">
+    <h1 id="output"></h1>
+    <script>
+        function func() {
+            console.log("jo");
+            var st = document.getElementById("input").value;
+            var arr = st.split(' ');
+            var CapitalizeWord = [];
+
+            arr.forEach(element => {
+               CapitalizeWord.push(element[0].toUpperCase() + element.slice(1,element.length));
+            });
+
+            document.getElementById("output").innerHTML = CapitalizeWord.join(' ');
+        }
+    </script>
+</body>
+</html>

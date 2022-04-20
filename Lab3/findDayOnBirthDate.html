@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter your Dob</h2>
+    <input type="text" name="" value="" id="input">
+    <input type="button" onclick="onfunction()" value="button" name="" id="">
+
+    <h1 id="print"></h1>
+    <script>
+        function onfunction(){
+            console.log("worki")
+            var  dob = document.getElementById("input").value;
+            var d = new Date(dob);
+            var day = d.getDay();
+            console.log(day);
+            document.getElementById("print").innerHTML = day;
+            var test = new Date(2022,3,6);
+            console.log(test.getMonth());
+        }
+       
+    </script>
+</body>
+</html>

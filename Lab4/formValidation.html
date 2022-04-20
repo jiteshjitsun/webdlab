@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="return callme()">
+        <p>Enter Your Name: <input type="text" name="" id="fname" value=""></p>  <br>
+        <p>Enter Your Mobile: <input type="text" name="" id="mob" value=""></p>  <br>
+        <p>Enter Your Email: <input type="text" name="" id="email" value=""></p>  <br>
+        <p>Enter Your Password: <input type="password" name="" id="Pass" value=""></p>  <br>
+        <p>Confirm Password: <input type="password" name="" id="Cpass" value=""></p>  <br>
+        <input type="submit" value="submit" name="" id="">
+    </form>
+
+    <script>
+        function callme(){
+            // console.log("hnei");
+            let name = document.getElementById("fname").value;
+            let mob = document.getElementById("mob").value;
+            let email = document.getElementById("email").value;
+            let pass = document.getElementById("Pass").value;
+            let cpass = document.getElementById("Cpass").value;
+
+            let regex = /[a-zA-Z]$/;
+            if(name="" || !regex.test(name)){
+                alert("Enter Valid name");
+                name.focus();
+                return false;
+            }
+            regex = /[0-9]{10}$/;
+            if(mob="" || !regex.test(mob)){
+                alert("Enter Valid mobile no.");
+                mob.focus();
+                return false;
+            }
+            regex = /\S+@\S+\.\S+/;
+            if(email="" || !regex.test(email)){
+                alert("Enter Valid email");
+                email.focus();
+                return false;
+            }
+
+            if(pass!=cpass){
+                alert("Password do not match");
+                cpass.focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+functions in string object in javaScript
+
+str = "Graphic Era"
+
+1. str.length;
+    var x = str.length;
+
+2. str.charAt(index);
+    str.charAt(0); --> G
+
+3. str.split(character);  //used to convert array into character
+    
+
+    eg: str = "Parul Madan"
+    str.split(" ");
+    var x = str[0].charAt(0);
+    var y = str[1].charAt(0);
+    var z = x+y;
+
+4. str.indexOf("P"); --> 0
+
+    str = "Parul Madan lives in Paris";
+    str.indexOf("P",7) // find P from 7th index onwards
+    str.indexOf("P",-7)
+
+5. str.lastIndexOf("P");  //paris wala p milega 
+
+6. str.search("P");
+
+/^([0-9]{10})+/
+
+7. str.replace("Paris","Dehradun");
+
+8.  str.substr(index,length);
+    str.SubString(start index, end index);
+    str.slice(start index, end index);
+
+Q. enter email id of yours before @ fetch 5 char and for security reasons replace it with *
+
+Q. enter 5 numbers from users Find square of these numbers and seperate themm by ,
